@@ -10,5 +10,5 @@
 
   - name: Copy index file
     template:
-      src: /etc/ansible/index.html
+      src: index.html
       dest: /var/www/html/index.html
