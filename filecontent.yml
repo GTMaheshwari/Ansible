@@ -1,0 +1,9 @@
+- hosts: localhost
+  tasks:
+  -  name: Print
+     shell: cat /etc/ansible/hostname.conf
+     register: filecontent
+  -  debug: msg="File is empty"
+     when: filecontent.stdout==""
+  -  debug: msg="File is not empty"
+     when: filecontent.stdout!==""
