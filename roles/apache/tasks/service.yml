@@ -1,3 +1,3 @@
 ---
-- name: Start Apache services 
-  service: name=httpd state=started enabled=yes
+- name: Start Apache services ( Pushed from VCStudio)
+  service: name=httpd state=started
